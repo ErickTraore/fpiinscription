@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Votre photo{% endblock %}
+
+
+{% block body %}
+<h3> Pour réaliser votre carte, enregistrez simplement votre photo</h3>
+<div>1- Ouvrez votre logiciel photo sur votre appareil .</div></br>
+<div>2- Prenez vous une photo d'identité.</div></br>
+<div>3- Retenez le nom du FICHIER de votre photo pour pouvoir le reselectionner.</div></br>
+<div>4- Ouvrez le site fpiinscription.com puis allet à l'onglet "Demande de carte"..</div></br>
+<div>5- Si vous avez déja une photo d'identité sur votre appareil, utilisée la.</div></br>
+<div>
+{{ form(form) }}
+
+{{ form_start(form) }}
+   {{ form_widget(form) }}
+
+{{ form_end(form) }}
+<a href="{{ '/' }}"><p><h4><span class="label label-success">Annuler Retour</span></h4></p></a>
+
+</div>
+{# <a href="{{ '/' }}"><p><h4><span class="label label-success">Connexion FPI</span></h4></p></a>  #}
+{# <a href="{{ path(app.request.get("/login")) }}">Same page</a> #}
+{# <button class="btn btn-success">{{ label | default('save') | trans }}</button> #}
+{# <a href="{{ 'adhesion_retour' }}"><p><h4><span class="label label-success">Annuler</span></h4></p></a> #}
+{% endblock %}

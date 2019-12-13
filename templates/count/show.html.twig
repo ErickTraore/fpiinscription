@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Count{% endblock %}
+
+{% block body %}
+    <h1>Count</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ count.id }}</td>
+            </tr>
+            <tr>
+                <th>Ref</th>
+                <td>{{ count.ref }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ count.description }}</td>
+            </tr>
+            <tr>
+                <th>PUnHt</th>
+                <td>{{ count.pUnHt }}</td>
+            </tr>
+            <tr>
+                <th>Qte</th>
+                <td>{{ count.qte }}</td>
+            </tr>
+            <tr>
+                <th>Remise</th>
+                <td>{{ count.remise }}</td>
+            </tr>
+            <tr>
+                <th>PUnHtRem</th>
+                <td>{{ count.pUnHtRem }}</td>
+            </tr>
+            <tr>
+                <th>PrixTotHt</th>
+                <td>{{ count.prixTotHt }}</td>
+            </tr>
+            <tr>
+                <th>Tva</th>
+                <td>{{ count.tva }}</td>
+            </tr>
+            <tr>
+                <th>DateBill</th>
+                <td>{{ count.dateBill ? count.dateBill|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>TotalTtc</th>
+                <td>{{ count.totalTtc }}</td>
+            </tr>
+            <tr>
+                <th>TotCumul</th>
+                <td>{{ count.totCumul }}</td>
+            </tr>
+            <tr>
+                <th>DateCumul</th>
+                <td>{{ count.dateCumul ? count.dateCumul|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('count_index') }}">back to list</a>
+
+    <a href="{{ path('count_edit', {'id': count.id}) }}">edit</a>
+
+    {{ include('count/_delete_form.html.twig') }}
+{% endblock %}

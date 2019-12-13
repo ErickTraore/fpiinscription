@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Display{% endblock %}
+
+{% block body %}
+<h3>Affichage photo </h3>
+
+<div>
+<h5>Une image d'identité doit avoir une taille d'environ 413 px × 532 px.</h5>
+
+    <img style="margin:15px" width="120" src='{{ asset('assets/images/' ~ im) }}'>
+</div>
+<a href="{{ '/' }}"><p><h4><span class="label label-success">Retour</span></h4></p></a>
+
+
+{% endblock %} 

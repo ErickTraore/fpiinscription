@@ -1,0 +1,32 @@
+[26-Oct-2019 10:03:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/ResetPasswordType.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/ResetPasswordType.php on line 13
+[26-Oct-2019 10:03:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/CountType.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/CountType.php on line 10
+[26-Oct-2019 10:03:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/AdhesionType.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/AdhesionType.php on line 21
+[26-Oct-2019 10:03:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/ChangePasswordType.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/ChangePasswordType.php on line 10
+[29-Oct-2019 21:21:51 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/ResetPasswordType.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/ResetPasswordType.php on line 13
+[29-Oct-2019 21:21:52 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/ChangePasswordType.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/ChangePasswordType.php on line 10
+[29-Oct-2019 21:21:52 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/CountType.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/CountType.php on line 10
+[29-Oct-2019 21:21:52 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\Form\AbstractType' not found in /home/c1249189c/public_html/src/Form/AdhesionType.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Form/AdhesionType.php on line 21

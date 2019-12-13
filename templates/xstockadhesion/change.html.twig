@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}maj Adhesion{% endblock %}
+
+{% block body %}
+    <h1>Formulaire de mise à jour Profil</h1>
+
+    {{ include('adhesion/_formAdhesion.html.twig') }}
+
+    <a href="{{ path('adhesion_index') }}">back to list</a> 
+{% endblock %}

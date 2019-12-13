@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Adhesion{% endblock %}
+
+{% block body %}
+<form action="" method="POST">
+<p><h2>Je fais un don</h2></p>
+{# <label> Nombre de mois</label> #}
+<label Je donne la somme de:</label>
+<select name="amountun">
+    <option value="">--Please choisir une option--</option>
+    <option value="500">Cinq euros = 5€</option>
+    <option value="5000">Cinquante euros = 50€</option>
+    <option value="10000">Cent euros = 100€</option>
+    <option value="20000">Deux-cent = 200€</option>
+    <option value="30000">Tois-cent =  300€</option>
+    <option value="50000">Cinq-cent euros = 500€</option>
+    <option value="100000">Mille euros = 1000€</option>
+    <option value="200000">Deux-mille euros = 2000€</option>
+    <option value="300000">Trois-mille euros = 3000€</option>
+    <option value="500000">Cinq-mille euros = 5000€</option>
+    <option value="1000000">Dix-mille euros = 10000€</option>
+</select> 
+<button type="submit">Envoyer</button>
+{# <input type='button' name="stop" value="Annuler" onclick='location:http://fpiinscription.com/index.php/'> #}
+{# <button type="submit" name="stop" value="annuler">Annuler</button> #}
+</form>
+
+<form action="http://fpiinscription.com/index.php/" method="POST">
+ <input type="SUBMIT" name="bouton1" value="Annuler">
+</form>
+
+{% endblock %}

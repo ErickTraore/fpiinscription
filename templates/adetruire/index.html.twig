@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Adhesion index{% endblock %}
+
+{% block body %}
+    <h1>Adhesion index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Homme</th>
+                <th>Femme</th>
+                <th>ShortHead</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>LieuNaissance</th>
+                <th>Nationnalite</th>
+                <th>NatureIdentite</th>
+                <th>NumberIdentity</th>
+                <th>AdresseCi</th>
+                <th>Email</th>
+                <th>Profession</th>
+                <th>Federation</th>
+                <th>Base</th>
+                <th>Section</th>
+                <th>Birthday</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for adhesion in adhesions %}
+            <tr>
+                <td>{{ adhesion.id }}</td>
+                <td>{{ adhesion.homme }}</td>
+                <td>{{ adhesion.femme }}</td>
+                <td>{{ adhesion.shortHead }}</td>
+                <td>{{ adhesion.firstName }}</td>
+                <td>{{ adhesion.lastName }}</td>
+                <td>{{ adhesion.lieuNaissance }}</td>
+                <td>{{ adhesion.nationnalite }}</td>
+                <td>{{ adhesion.natureIdentite }}</td>
+                <td>{{ adhesion.numberIdentity }}</td>
+                <td>{{ adhesion.adresseCi }}</td>
+                <td>{{ adhesion.email }}</td>
+                <td>{{ adhesion.profession }}</td>
+                <td>{{ adhesion.federation ? 'Yes' : 'No' }}</td>
+                <td>{{ adhesion.base ? 'Yes' : 'No' }}</td>
+                <td>{{ adhesion.section ? 'Yes' : 'No' }}</td>
+                <td>{{ adhesion.birthday ? adhesion.birthday|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('adhesion_show', {'id': adhesion.id}) }}">show</a>
+                    <a href="{{ path('adhesion_edit', {'id': adhesion.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="18">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('adhesion_new') }}">Create new</a>
+{% endblock %}

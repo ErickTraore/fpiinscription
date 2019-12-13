@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Attestation de paiement{% endblock %}
+
+{% block body %}
+
+ <div class="well">
+ <ul>
+            <div> <img src="{{ asset('assets/img/logofpi.png') }}" class="img-circle"  alt="logo"></div>
+				<h4>FRONT  POPULAIRE  IVOIRIEN</h4>        
+				<h6>Représentation FPI-FRANCE</h6>        
+			</div>
+
+<caption class="well well-sm"><h2> Attestation de paiement</h2></caption>
+
+    <table>
+            <tr>
+                <th class="well well-sm">Nom:</th>
+                <td class="well well-sm">{{ adhesionfirstname }}</td>
+                <th class="well well-sm">N°Adherent:</th>
+                <td class="well well-sm">{{ adhesionId }}</td>
+            </tr>
+    </table>
+
+    <table>
+            <tr>
+                <th class="well">Nature paiement </th>
+                <th class="well">Reference </th>
+                <th class="well">Date paiement </th>
+                <th class="well">Paiement ttc </th>
+                <th class="well">Date d'échéance </th>
+            </tr>
+             {% for count in counts %}
+            <tr>
+                <td class="well well-sm">{{ count.description }}</td>
+                <td class="well well-sm">{{ count.ref }}</td>
+                <td class="well well-sm">{{ count.date_Bill.date |date('d-m-Y') }}</td>
+                <td class="well well-sm">{{ count.totalTtc  / 100 }}</td>
+                <td class="well well-sm">{{ count.date_Echeance.date | default("") | date('d-m-Y')  }}</td>
+            </tr>
+             {% else %}
+                <li>Nous ne trouvons aucune facture.</li>
+            {% endfor %}
+         
+    </table>  
+</u>
+</div>
+<a href="{{ '/' }}"><p><h4><span class="label label-success">Retour</span></h4></p></a>
+
+</div>
+{% endblock %} 

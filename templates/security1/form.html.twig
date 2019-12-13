@@ -1,0 +1,50 @@
+{# {{ form_start(form) }} 
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }} #}
+
+
+{% extends  'security1/layout.html.twig' %}
+        {% block body %}
+        <div class="alert alert-danger" role="alert">
+Procédure d'enregistrement d'identifiant.
+Votre identifiant doit impérativement correspondre à votre n° de téléphone internationnal
+.
+ </div> 
+ <div class="alert alert-success" role="alert">
+  <div>Exemple d'IDENTIFIANT avec le n° 07 03 04 05 67 (10 chiffres).</div>
+  <div>1- suprimmez le premier chiffre qui est "0" cela fait: 7 03 04 05 67.</div>
+  <div>2- Ajoutez l'indicatif internationnal france qui est 0033 cela fait: 00337 03 04 05 67.</div>  
+  <div>3- Cet identifiant est donc: 0033703040567  (13 chiffres).</div>
+</div>
+
+            <div class="row">
+                  <h3> INSCRIPTION </h3>
+                 
+                  {{ form_start(form, {'attr':{'novalidate': 'novalidate'}}) }}
+                    
+
+                  <div class="form-group"> 
+                          <label for="{{ form.username.vars.id }}">Identifiant: Tel portable 13 chiffres France: (00336xxxxxx ou 00337xxxxxx) </label>
+                          <input type="text" style="background-color:powderblue" class="form-control" id="{{ form.username.vars.id }}" name="{{ form.username.vars.full_name }}" value="{{ form.username.vars.value }}" placeholder={{"0033" }} >
+                          {{ form_errors(form.username) }} 
+                          {% do form.username.setRendered %}
+                  </div>
+
+
+                    <div class="form-group"> 
+                    {{ form_label(form.plainPassword.first) }} 
+                    {{ form_widget(form.plainPassword.first,{'attr':{'class':'form-control', 'style':'background-color:powderblue'}}) }}
+                    {{ form_errors(form.plainPassword.first,{'attr':{'class':'form-control', 'style':'color:red'}})  }} 
+                    </div>
+
+                    <div class="form-group"> 
+                    {{ form_row(form.plainPassword.second,{'attr':{'class':'form-control', 'style':'background-color:powderblue'}}) }} </div>
+
+                
+                    <button type="submit" class="label label-success"><h6>Inscription!</h6> </button>
+
+                    {{ form_end(form) }}
+              
+              </div>
+        {% endblock %}

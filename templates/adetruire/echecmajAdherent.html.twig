@@ -1,0 +1,13 @@
+{% extends  'base.html.twig' %}
+{% block title %}félicitation adherent{% endblock title %}
+
+ {% block navbar %} {% endblock navbar %}  
+{% block pub %} {% endblock pub %}    
+        
+        {% block body %}
+        <h5>Il vous faut d'abord créer une demande d'adhésion puis seulement ensuite la modifier.</h5>
+         <li><a href="{{ 'adhesion/new' }}">Formulaire de demande</a></li>
+
+		<li><a href="{{ '/' }}"><p><h4><span class="label label-info">Retour </span></h4></p></a> </li>
+       
+        {% endblock body %}

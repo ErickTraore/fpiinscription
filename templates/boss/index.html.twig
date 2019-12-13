@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Boss index{% endblock %}
+
+{% block body %}
+    <h1>Boss index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>ImageName</th>
+                <th>LastName</th>
+                <th>LieuNaissance</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for boss in bosses %}
+            <tr>
+                <td>{{ boss.id }}</td>
+                <td>{{ boss.firstName }}</td>
+                <td>{{ boss.imageName }}</td>
+                <td>{{ boss.lastName }}</td>
+                <td>{{ boss.lieuNaissance }}</td>
+                <td>
+                    <a href="{{ path('boss_show', {'id': boss.id}) }}">show</a>
+                    <a href="{{ path('boss_edit', {'id': boss.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('boss_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,48 @@
+{# templates/menu-accordeon.html.twig #}
+
+<ul id="menu-accordeon">
+   <li><a href="#">REPRESENTATION</a>
+      <ul>
+         <li><a href="#">Bureau</a></li>
+      </ul>
+   </li>
+    <li><a href="#">Etre sympathisant</a>
+    <li><a href="#">Devenir Adhérent</a>
+      <ul>
+         <li><a href="{{ path('adhesion_new') }}">Formulaire d'adhésion</a></li>
+          {% if is_granted ('ROLE_ADHERENT') %}
+         <li><a href="{{ path('adhesion_edituser') }}">Mon profil</a></li>
+         <li><a href="{{ path('adhesion_newUpload') }}">Demande de carte</a></li>
+         <li><a href="{{ path('adhesion_viewUpload') }}">Voir ma photo </a></li>
+          {% endif %}
+      </ul>
+   </li>
+	<li><a href="#">Cotisations</a>
+      <ul>
+       {% if is_granted ('ROLE_ADHERENT') %} 
+         <li><a href="{{ path('cotisation_formPaiement') }}">Mensuelle/annuel</a></li>
+         <li><a href="{{ path('cotisation_formdon') }}">Dons</a></li>
+         <li><a href="{{ path('count_attestation') }}">Attestation de paiement</a></li>
+       {% endif %} 
+
+      </ul>
+   </li>
+   <li><a href="#">Tableau de bord</a>  
+      <ul>
+       {% if is_granted ('ROLE_MANAGER_LYON') %} 
+         {# <li><a href="{{ path('envoiesms_general') }}">Communications</a></li> #}
+      {% endif %}
+         <li><a href="#">Liste-Sympathisants</a></li>
+         <li><a href="#">Liste-Adherent</a></li>
+         <li><a href="#">Total Abonnement</a></li>
+         <li><a href="#">Total dons</a></li>
+         <li><a href="#">Total vente</a></li>
+      </ul>
+   </li>
+   <li><a href="#">Mot de Pass</a>
+      <ul>
+         <li><a href="{{ path('mdpupdate') }}">Remplacez</a></li>
+      </ul>
+   </li>
+ 
+</ul>

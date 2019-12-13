@@ -1,0 +1,18 @@
+{% extends  'security1/layout.html.twig' %}
+{% block body %}
+<p><h1> Connectez-vous avec votre identifiant: </h1>
+<h3> {{ user.username }}</h3>
+et votre Mot-De-Pass confidentiel </p>
+
+<button type="button" class="btn btn-primary">
+ Attention:
+<span class="badge badge-warning">Si vous perdez votre Identifiant(Username) alors votre compte sera suprimé.</span>
+<span class="sr-only">unread messages</span>
+</button>
+
+<a href="{{ '/' }}"><p><h4><span class="label label-success">Retour</span></h4></p></a>
+
+{% endblock %}
+
+{% block droite %}
+{% endblock %}

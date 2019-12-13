@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CotisationController!{% endblock %}
+
+{% block body %}
+<p><h3>PAIEMENT CARTE BLEUE (€) en euro </h3></p>
+
+<form action="paiement" method="POST">
+<input type ='hidden' name='amountrois' value = {{ amountdeux }}> </input>
+        <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        {# data-key="pk_test_yH2L4wvQABMYrMv6xJnzwPDr" #}
+        data-key="pk_live_CRM6aOQ11RfcncXdqX8jKYpB"
+        data-amount = {{ amountdeux}}
+        data-name="Front Populaire Ivoirien"
+        data-description="Je paye ma cotisation"
+        data-image="{{ asset('assets/img/logofpi.png') }}"
+        data-locale="auto"
+        data-currency="eur"
+        data-label="Paiement CB"> 
+        </script>
+</form>
+
+{% endblock %}
+

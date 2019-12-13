@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Adherent{% endblock %}
+
+{% block body %}
+    <h1>Edit Adherent</h1>
+
+    {{ include('adherent/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('adherent_index') }}">back to list</a>
+
+    {{ include('adherent/_delete_form.html.twig') }}
+{% endblock %}

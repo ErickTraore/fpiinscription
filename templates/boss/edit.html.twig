@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Boss{% endblock %}
+
+{% block body %}
+    <h1>Edit Boss</h1>
+
+    {{ include('boss/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('boss_index') }}">back to list</a>
+
+    {{ include('boss/_delete_form.html.twig') }}
+{% endblock %}

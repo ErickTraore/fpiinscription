@@ -1,0 +1,16 @@
+[26-Oct-2019 10:02:54 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/c1249189c/public_html/src/Kernel.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Kernel.php on line 12
+[26-Oct-2019 10:03:03 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/c1249189c/public_html/src/Kernel.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Kernel.php on line 12
+[29-Oct-2019 21:21:39 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/c1249189c/public_html/src/Kernel.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Kernel.php on line 12
+[29-Oct-2019 21:22:10 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Component\HttpKernel\Kernel' not found in /home/c1249189c/public_html/src/Kernel.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Kernel.php on line 12

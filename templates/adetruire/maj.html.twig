@@ -1,0 +1,112 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}page maj{% endblock %}
+
+{% block body %}
+<h2> Formulaire d'adhesion </h2>
+
+{{ form_start(formAdhesion) }}
+
+<div class="form-group">
+  {{ form_label(formAdhesion.homme, 'vous êtes un homme (obligatoire)') }}
+{{ form_widget(formAdhesion.homme, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.homme) }} 
+</div>
+
+<div class="form-group">
+{{ form_label(formAdhesion.femme, 'Vous êtes une femme (obligatoire)') }}
+{{ form_widget(formAdhesion.femme, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.femme) }} 
+</div>
+
+<div class="form-group">
+{{ form_label(formAdhesion.firstName, 'Nom (obligatoire)') }}
+{{ form_widget(formAdhesion.firstName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.firstName) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.lastName, 'Prenom (obligatoire)') }}
+{{ form_widget(formAdhesion.lastName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.lastName) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.birthday, 'Date de naissance (obligatoire)') }}
+{{ form_widget(formAdhesion.birthday, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.birthday) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.nationnalite, 'Nationnalité (obligatoire)') }}
+{{ form_widget(formAdhesion.nationnalite, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.nationnalite) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.shortHead, 'Photo d\'identité (optionnel mais obligatoire pour obtenir votre carte d\'adherent)') }}
+{{ form_widget(formAdhesion.shortHead, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.shortHead) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.lieuNaissance, 'Lieu de Naissance') }}
+{{ form_widget(formAdhesion.lieuNaissance, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.lieuNaissance) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.natureIdentite, 'Nature de votre pièce d\'identité') }}
+{{ form_widget(formAdhesion.natureIdentite, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.natureIdentite) }}
+</div>
+
+<div class="form-group">
+{{ form_label(formAdhesion.numberIdentity, 'Numero de la piece d\'identite') }}
+{{ form_widget(formAdhesion.numberIdentity, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.numberIdentity) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.adresseCi, 'Votre adresse postale actuelle') }}
+{{ form_widget(formAdhesion.adresseCi, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.adresseCi) }}
+</div>
+
+<div class="form-group">
+{{ form_label(formAdhesion.email, 'Email') }}
+{{ form_widget(formAdhesion.email, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.email) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.profession, 'Profession') }}
+{{ form_widget(formAdhesion.profession, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.profession) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.federation, 'Cochez si vous appartenez à uneFédération') }}
+{{ form_widget(formAdhesion.federation, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.federation) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.base, 'Cochez si vous appartenez à une Base') }}
+{{ form_widget(formAdhesion.base, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.base) }}
+</div>
+<div class="form-group">
+{{ form_label(formAdhesion.section, 'Cochez si vous appartenez à une Section') }}
+{{ form_widget(formAdhesion.section, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(formAdhesion.section) }}
+</div>
+
+
+
+<div class="form-group">
+<label for="{{ formAdhesion.user.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(formAdhesion.user) }}
+{% do formAdhesion.user.setRendered %}
+</div>
+
+    <button class="btn">{{ button_label|default('Save') }} </div></button>
+    <div class="alert alert-danger">{{ form_rest(formAdhesion) }}
+
+{{ form_end(formAdhesion) }}
+</div>
+
+         
+
+{% endblock body %}

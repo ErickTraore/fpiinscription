@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Count{% endblock %}
+
+{% block body %}
+    <h1>Create new Count</h1>
+
+    {{ include('count/_form.html.twig') }}
+
+    <a href="{{ path('count_index') }}">back to list</a>
+{% endblock %}

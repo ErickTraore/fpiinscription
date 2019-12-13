@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fpilyon{% endblock %}
+
+{% block body %}
+    <h1>Fpilyon</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ fpilyon.id }}</td>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <td>{{ fpilyon.firstname }}</td>
+            </tr>
+            <tr>
+                <th>Lastname</th>
+                <td>{{ fpilyon.lastname }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ fpilyon.email }}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{ fpilyon.phone }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ fpilyon.adresse }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('fpilyon_index') }}">back to list</a>
+
+    <a href="{{ path('fpilyon_edit', {'id': fpilyon.id}) }}">edit</a>
+
+    {{ include('fpilyon/_delete_form.html.twig') }}
+{% endblock %}

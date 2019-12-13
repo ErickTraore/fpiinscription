@@ -1,0 +1,102 @@
+[26-Oct-2019 03:01:34 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:25
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(25): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index()
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 25
+[26-Oct-2019 03:01:34 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 25
+[26-Oct-2019 19:40:39 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/c1249189c/public_html/src/Controller/config.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:22
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(22): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 19:40:39 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required '/home/c1249189c/public_html/src/Controller/config.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 19:47:00 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/c1249189c/public_html/src/Controller/config.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:22
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(22): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 19:47:00 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required '/home/c1249189c/public_html/src/Controller/config.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 19:47:36 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/c1249189c/public_html/src/Controller/config.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:22
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(22): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 19:47:36 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required '/home/c1249189c/public_html/src/Controller/config.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 19:47:44 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(/home/c1249189c/public_html/src/Controller/config.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:22
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(22): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 19:47:44 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required '/home/c1249189c/public_html/src/Controller/config.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 22
+[26-Oct-2019 21:42:09 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(../vendor/stripe/init.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:16
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(16): require_once()
+#1 [internal function]: spl_autoload_call('App\\Controller\\...')
+#2 /home/c1249189c/public_html/vendor/symfony/config/Resource/ReflectionClassResource.php(105): ReflectionClass->__construct('App\\Controller\\...')
+#3 /home/c1249189c/public_html/vendor/symfony/config/Resource/ReflectionClassResource.php(52): Symfony\Component\Config\Resource\ReflectionClassResource->computeHash()
+#4 /home/c1249189c/public_html/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php(34): Symfony\Component\Config\Resource\ReflectionClassResource->isFresh(1572110117)
+#5 /home/c1249189c/public_html/vendor/symfony/config/ResourceCheckerConfigCache.php(99): Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh(O in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 16
+[26-Oct-2019 21:42:09 Europe/Paris] PHP Fatal error:  Symfony\Component\Debug\DebugClassLoader::main(): Failed opening required '../vendor/stripe/init.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 16
+[26-Oct-2019 21:42:16 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(../vendor/stripe/init.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:16
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(16): require_once()
+#1 [internal function]: spl_autoload_call('App\\Controller\\...')
+#2 /home/c1249189c/public_html/vendor/symfony/config/Resource/ReflectionClassResource.php(105): ReflectionClass->__construct('App\\Controller\\...')
+#3 /home/c1249189c/public_html/vendor/symfony/config/Resource/ReflectionClassResource.php(52): Symfony\Component\Config\Resource\ReflectionClassResource->computeHash()
+#4 /home/c1249189c/public_html/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php(34): Symfony\Component\Config\Resource\ReflectionClassResource->isFresh(1572110117)
+#5 /home/c1249189c/public_html/vendor/symfony/config/ResourceCheckerConfigCache.php(99): Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh(O in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 16
+[26-Oct-2019 21:42:16 Europe/Paris] PHP Fatal error:  Symfony\Component\Debug\DebugClassLoader::main(): Failed opening required '../vendor/stripe/init.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 16
+[27-Oct-2019 03:24:53 Europe/Paris] PHP Fatal error:  Cannot declare class App\Controller\CotisationController, because the name is already in use in /home/c1249189c/public_html/src/Controller/xCotisationController.php on line 0
+[27-Oct-2019 03:25:45 Europe/Paris] PHP Fatal error:  Cannot declare class App\Controller\CotisationController, because the name is already in use in /home/c1249189c/public_html/src/Controller/xCotisationController.php on line 0
+[29-Oct-2019 12:22:49 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:33
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(33): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 33
+[29-Oct-2019 12:22:49 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 33
+[29-Oct-2019 12:31:02 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:33
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(33): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 33
+[29-Oct-2019 12:31:02 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 33
+[29-Oct-2019 12:31:27 Europe/Paris] PHP Warning:  Uncaught ErrorException: Warning: require_once(vendor/autoload.php): failed to open stream: No such file or directory in /home/c1249189c/public_html/src/Controller/CotisationController.php:33
+Stack trace:
+#0 /home/c1249189c/public_html/src/Controller/CotisationController.php(33): require_once()
+#1 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(151): App\Controller\CotisationController->index(Object(Symfony\Component\HttpFoundation\Request))
+#2 /home/c1249189c/public_html/vendor/symfony/http-kernel/HttpKernel.php(68): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#3 /home/c1249189c/public_html/vendor/symfony/http-kernel/Kernel.php(198): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#4 /home/c1249189c/public_html/public/index.php(25): Symfony\Component\HttpKernel\Kernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#5 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 33
+[29-Oct-2019 12:31:27 Europe/Paris] PHP Fatal error:  App\Controller\CotisationController::index(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 33
+[21-Nov-2019 12:47:27 Europe/Paris] PHP Fatal error:  Cannot use Symfony\Component\HttpFoundation\File\UploadedFile as UploadedFile because the name is already in use in /home/c1249189c/public_html/src/Controller/AdhesionController.php on line 22
+[21-Nov-2019 12:47:27 Europe/Paris] PHP Fatal error:  Cannot use Symfony\Component\HttpFoundation\File\UploadedFile as UploadedFile because the name is already in use in /home/c1249189c/public_html/src/Controller/AdhesionController.php on line 22

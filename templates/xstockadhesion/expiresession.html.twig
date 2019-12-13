@@ -1,0 +1,12 @@
+{% extends  'base.html.twig' %}
+{% block title %} expire_session {% endblock title %}
+
+{% block navbar %} {% endblock navbar %}  
+{% block pub %} {% endblock pub %}    
+        
+        {% block body %}
+        <h3> Votre session a expirée, veuillez vous reconnectez s'il vous plait .</h3>
+		<li><a href="{{ '/' }}"><p><h4><span class="label label-info">Re-Connexion </span></h4></p></a> </li>
+        
+        {% endblock body %}
+        

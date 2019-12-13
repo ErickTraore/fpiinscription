@@ -1,0 +1,110 @@
+<div class="container">
+{{ form_start(form, {'attr' : {'novalidate':'novalidate'}}) }}
+    <div class="form-group">
+        {{ form_label(form.gender, 'Genre (obligatoire)') }}
+        {{ form_widget(form.gender, {'attr':{'class':'form-control'}}) }}
+        {{ form_errors(form.gender) }}
+    </div>
+<div class="form-group">
+{{ form_label(form.firstName, 'Nom (obligatoire)') }}
+{{ form_widget(form.firstName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.firstName) }}
+</div>
+<div class="form-group">
+{{ form_label(form.lastName, 'Prenom (obligatoire)') }}
+{{ form_widget(form.lastName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.lastName) }}
+</div>
+<div class="form-group">
+        {{ form_label(form.image, 'Photo d\'identité (optionnel mais obligatoire pour obtenir votre carte d\'adherent)') }}
+        {% if adhesion is defined and adhesion.imageName is defined %}
+            <div class="text-center">
+                {# <img style="margin:15px" width="120" src="{{ asset('adhesions/' ~ adhesion.imageName) }}" #}
+                <img style="margin:15px" width="120" src="{{ asset('assets/adhesions/' ~ adhesion.imageName) }}"
+                     alt="test">
+            </div>
+        {% endif %}
+        {{ form_widget(form.image, {'attr':{'class':'form-control'}}) }}
+        {{ form_errors(form.image) }}
+</div> 
+<div class="form-group">
+<label for="{{ form.birthday.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.birthday) }}
+{% do form.birthday.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.nationnalite.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.nationnalite) }}
+{% do form.nationnalite.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.lieuNaissance.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.lieuNaissance) }}
+{% do form.lieuNaissance.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.natureIdentite.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.natureIdentite) }}
+{% do form.natureIdentite.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.numberIdentity.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.numberIdentity) }}
+{% do form.numberIdentity.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.adresseCi.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.adresseCi) }}
+{% do form.adresseCi.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.email.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.email) }}
+{% do form.email.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.profession.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.profession) }}
+{% do form.profession.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.federation.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.federation) }}
+{% do form.federation.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.base.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.base) }}
+{% do form.base.setRendered %}
+</div>
+<div class="form-group">
+<label for="{{ form.section.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.section) }}
+{% do form.section.setRendered %}
+</div>
+
+
+
+<div class="form-group">
+<label for="{{ form.user.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.user) }}
+{% do form.user.setRendered %}
+</div>
+
+    <button class="btn btn-success">{{ label | default('save') | trans }}</button>
+    {# <div class="alert alert-danger">{{ form_rest(form) }} #}
+
+{{ form_end(form) }}
+</div>

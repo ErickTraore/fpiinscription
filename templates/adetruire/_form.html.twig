@@ -1,0 +1,97 @@
+<div class="container">
+
+{{ form_start(form, {'attr' : {'novalidate':'novalidate'}}) }}
+
+<div class="form-group">
+{{ form_label(form.gender, 'Genre (obligatoire)') }}
+{{ form_widget(form.gender, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.gender) }}
+</div>
+<div class="form-group">
+{{ form_label(form.firstName, 'Nom (obligatoire)') }}
+{{ form_widget(form.firstName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.firstName) }}
+</div>
+<div class="form-group">
+{{ form_label(form.lastName, 'Prenom (obligatoire)') }}
+{{ form_widget(form.lastName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.lastName) }}
+</div>
+<div class="form-group">
+{{ form_label(form.birthday, 'Date de naissance (obligatoire)') }}
+{{ form_widget(form.birthday, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.birthday) }}
+</div>
+<div class="form-group">
+{{ form_label(form.nationnalite, 'Nationnalité (obligatoire)') }}
+{{ form_widget(form.nationnalite, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.nationnalite) }}
+</div>
+    <div class="form-group">
+        {{ form_label(form.image, 'Photo d\'identité (optionnel mais obligatoire pour obtenir votre carte d\'adherent)') }}
+        {% if adhesion is defined and adhesion.imageName is defined %}
+            <div class="text-center">
+            <img style="margin:15px" width="120" src='{{ asset('assets/adhesions/' ~ adhesion.imageName) }}'
+            alt="test">
+            </div>
+        {% endif %}
+        {{ form_widget(form.image, {'attr':{'class':'form-control'}}) }}
+        {{ form_errors(form.image) }}
+    </div>
+<div class="form-group">
+{{ form_label(form.lieuNaissance, 'Lieu de Naissance') }}
+{{ form_widget(form.lieuNaissance, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.lieuNaissance) }}
+</div>
+<div class="form-group">
+{{ form_label(form.natureIdentite, 'Nature de votre pièce d\'identité') }}
+{{ form_widget(form.natureIdentite, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.natureIdentite) }}
+</div>
+<div class="form-group">
+{{ form_label(form.numberIdentity, 'Numero de la piece d\'identite') }}
+{{ form_widget(form.numberIdentity, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.numberIdentity) }}
+</div>
+<div class="form-group">
+{{ form_label(form.adresseCi, 'Votre adresse postale actuelle') }}
+{{ form_widget(form.adresseCi, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.adresseCi) }}
+</div>
+<div class="form-group">
+{{ form_label(form.email, 'Email') }}
+{{ form_widget(form.email, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.email) }}
+</div>
+<div class="form-group">
+{{ form_label(form.profession, 'Profession') }}
+{{ form_widget(form.profession, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.profession) }}
+</div>
+<div class="form-group">
+{{ form_label(form.federation, 'Cochez si vous appartenez à uneFédération') }}
+{{ form_widget(form.federation, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.federation) }}
+</div>
+<div class="form-group">
+{{ form_label(form.base, 'Cochez si vous appartenez à une Base') }}
+{{ form_widget(form.base, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.base) }}
+</div>
+<div class="form-group">
+{{ form_label(form.section, 'Cochez si vous appartenez à une Section') }}
+{{ form_widget(form.section, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.section) }}
+</div>
+<div class="form-group">
+<label for="{{ form.user.vars.id }}"></label>
+<input type="hidden">
+{{ form_errors(form.user) }}
+{% do form.user.setRendered %}
+</div>
+
+    <button class="btn btn-success">{{ label | default('save') | trans }}</button>
+    
+    {# <div class="alert alert-danger">{{ form_rest(form) }} #}
+    {{ form_end(form) }}
+    </div>

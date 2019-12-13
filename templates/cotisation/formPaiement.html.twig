@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Adhesion{% endblock %}
+
+{% block body %}
+<form action="" method="POST">
+<p><h2>Paiement cotisation: 5€/mois</h2></p>
+{# <label> Nombre de mois</label> #}
+<label for="nbreDeMois">Choisir Nombre de mois à payer:</label>
+<select name="amountun">
+    <option value="">--Please choisir une option--</option>
+    <option value="500">1 mois = 5€</option>
+    <option value="1500">3 mois = 15€</option>
+    <option value="3000">6 mois = 30€</option>
+    <option value="6000">12 mois = 60€</option>
+</select>
+<button type="submit">Envoyer</button>
+{# <button type="submit" value="Annuler">Annuler</button> #}
+
+</form>
+<form action="http://fpiinscription.com/index.php/" method="POST">
+ <input type="SUBMIT" name="bouton1" value="Annuler">
+</form>
+{% endblock %}

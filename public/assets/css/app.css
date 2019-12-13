@@ -1,0 +1,48 @@
+body {
+    background: #252525;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+.main {
+    background: white url(../../../../test/machine_a_ecrire.jpg) right top no-repeat;
+    background-size: contain;
+    padding: 80px 20px 20px;
+    margin-top: 120px;
+}
+@media only screen and (max-width : 992px) {
+    .main {
+        background: white;
+        margin-top: 30px;
+    }
+}
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 0;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #999;
+    font-size: 18px;
+    margin-top: 5px;
+}
+form {
+    margin-top: 60px;
+}
+input.form-control , input[type="submit"] , .btn {
+    border-radius: 0px;
+}
+.btn {
+    transition: all ease-in-out 0.2s;
+}
+.credits {
+    margin-top: 100px;
+    color: #999;
+    font-size: 12px;
+}
+.credits a {
+    color: inherit;
+}/* CSS Document */
+

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Fpilyon{% endblock %}
+
+{% block body %}
+    <h1>Edit Fpilyon</h1>
+
+    {{ include('fpilyon/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('fpilyon_index') }}">back to list</a>
+
+    {{ include('fpilyon/_delete_form.html.twig') }}
+{% endblock %}

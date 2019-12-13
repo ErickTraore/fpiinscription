@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Count index{% endblock %}
+
+{% block body %}
+    <h1>Count index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Ref</th>
+                <th>Description</th>
+                <th>PUnHt</th>
+                <th>Qte</th>
+                <th>Remise</th>
+                <th>PUnHtRem</th>
+                <th>PrixTotHt</th>
+                <th>Tva</th>
+                <th>DateBill</th>
+                <th>TotalTtc</th>
+                <th>TotCumul</th>
+                <th>DateCumul</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for count in counts %}
+            <tr>
+                <td>{{ count.id }}</td>
+                <td>{{ count.ref }}</td>
+                <td>{{ count.description }}</td>
+                <td>{{ count.pUnHt }}</td>
+                <td>{{ count.qte }}</td>
+                <td>{{ count.remise }}</td>
+                <td>{{ count.pUnHtRem }}</td>
+                <td>{{ count.prixTotHt }}</td>
+                <td>{{ count.tva }}</td>
+                <td>{{ count.dateBill ? count.dateBill|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ count.totalTtc }}</td>
+                <td>{{ count.totCumul }}</td>
+                <td>{{ count.dateCumul ? count.dateCumul|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('count_show', {'id': count.id}) }}">show</a>
+                    <a href="{{ path('count_edit', {'id': count.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="14">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('count_new') }}">Create new</a>
+{% endblock %}

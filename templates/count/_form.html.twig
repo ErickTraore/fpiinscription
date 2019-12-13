@@ -1,0 +1,66 @@
+
+<div class="container">
+
+
+{{ form_start(form_count, {'attr' : {'novalidate':'novalidate'}}) }}
+
+{{ dump(count) }}
+
+<div class="form-group">
+{{ form_label(form_count.ref) }}
+{{ form_widget(form_count.ref, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.ref) }}
+</div>
+<div class="form-group">
+{{ form_label(form_count.description) }}
+{{ form_widget(form_count.description, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.description) }}
+</div>
+<div class="form-group">
+{{ form_label(form_count.pUnHt) }}
+{{ form_widget(form_count.pUnHt, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.pUnHt) }}
+</div>
+<div class="form-group">
+{{ form_label(form_count.qte) }}
+{{ form_widget(form_count.qte, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.qte) }}
+</div><div class="form-group">
+{{ form_label(form_count.remise) }}
+{{ form_widget(form_count.remise, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.remise) }}
+</div>
+<div class="form-group">
+{{ form_label(form_count.prixTotHt) }}
+{{ form_widget(form_count.prixTotHt, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.prixTotHt) }}
+</div>
+<div class="form-group">
+{{ form_label(form_count.tva) }}
+{{ form_widget(form_count.tva, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.tva) }}
+</div><div class="form-group">
+{{ form_label(form_count.dateBill) }}
+{{ form_widget(form_count.dateBill, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.dateBill) }}
+</div><div class="form-group">
+{{ form_label(form_count.totalTtc) }}
+{{ form_widget(form_count.totalTtc, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.totalTtc) }}
+</div><div class="form-group">
+{{ form_label(form_count.totCumul) }}
+{{ form_widget(form_count.totCumul, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.totCumul) }}
+</div><div class="form-group">
+{{ form_label(form_count.dateCumul) }}
+{{ form_widget(form_count.dateCumul, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form_count.dateCumul) }}
+  </div>
+
+<button class="btn btn-success">{{ label | default('save') | trans }}</button>
+
+<div>
+{{ form_end(form_count) }}
+</div>
+
+</div>

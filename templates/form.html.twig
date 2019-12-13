@@ -1,0 +1,36 @@
+{% extends  'base.html.twig' %}
+{% block body %}
+
+{{ form_start(form, {'attr':{'novalidate': 'novalidate'}}) }}
+                    
+
+                  <div class="form-group"> 
+                          <label for="{{ form.username.vars.id }}">Votre identifiant reste le même (00336xxxxxx ou 00337xxxxxx) </label>
+                          <input type="hidden" style="background-color:powderblue" class="form-control" id="{{ form.username.vars.id }}" name="{{ form.username.vars.full_name }}" value="{{ form.username.vars.value }}" placeholder={{"0033" }} >
+                          {{ form_errors(form.username) }} 
+                          {% do form.username.setRendered %}
+                  </div>
+
+                  {# <div class="form-group"> 
+                    {{ form_label(form.username) }}
+                    {{ form_widget(form.username,{'attr':{'class':'form-control'}}) }}
+                    {{ form_errors(form.username) }} 
+                    {% do form.username.setRendered %}
+                  </div> #}
+
+
+                    <div class="form-group"> 
+                    {{ form_label(form.plainPassword.first) }} 
+                    {{ form_widget(form.plainPassword.first,{'attr':{'class':'form-control', 'style':'background-color:powderblue'}}) }}
+                    {{ form_errors(form.plainPassword.first,{'attr':{'class':'form-control', 'style':'color:red'}})  }} 
+                    </div>
+
+                    <div class="form-group"> 
+                    {{ form_row(form.plainPassword.second,{'attr':{'class':'form-control', 'style':'background-color:powderblue'}}) }} </div>
+
+                
+                    <button type="submit" class="label label-success"><h6>Changez Mot de pass!</h6> </button>
+
+                    {{ form_end(form) }}
+
+{% endblock %}

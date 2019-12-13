@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}visionnage image{% endblock %}
+
+{% block body %}
+<h3>Bonjour chers apprenants</h3>
+	  						<div class="row" id="head-color">
+								  <div class="col-lg-3 col-md-2 col-sm-2 hidden-xs">
+                  	{# <a href="#"><img class=img-responsive src="{{ asset('./assets/img/logofpi.jpg') }}"  alt="logo"></a> #}
+                    <div> 
+                    <img src="{{ asset('assets/img/logofpi.png') }}" class="img-circle"  alt="logo" width="100px" ></div>
+                  </div>
+								  <div class="col-lg-9 col-md-9 col-sm-9 ">
+									  <h1>FRONT  POPULAIRE  IVOIRIEN</h1>        
+									  <h3>Représentation FPI-FRANCE</h3>        
+								  </div>
+						</div>
+<style>img{ width: 300px;}</style>
+ <img src="{{ assets(adhesion.imageName) }}" alt="" />
+{% endblock  %}

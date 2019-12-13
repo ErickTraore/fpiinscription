@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Image privée{% endblock %}
+
+
+{% block body %} 
+
+    <h3>Hello</h3>
+      {# {% for image in images  %}
+    {# <img src="data:adhesion/jpeg;base64,{{ adhesion.imageName }}"> #}
+    {# <img src="data:image/jpeg;base64,{{ asset('assets/images/' ~ image.imageName) }}"> #}
+   {# <img src="data:adhesion/jpeg;base64, {{asset('/public/assets/adhesions/' ~ adhesion.imageName) }}" #}
+  {# <style>img{ width: 300px;}</style>
+ <img src="data:adhesion/jpeg;base64,{{ adhesion.imageName }}"> 
+ <a href="{{ asset('assets/adhesions/' ~ adhesion.imageName) }}">View brochure (PDF)</a>
+
+    <p> <h4><a href = "{{ path('home')}}">retour</a></h4></p>
+    {% endfor %}
+     <li>{{ resp.firstName }} </li> #}
+
+
+ <img src="data:image/png;base64,<?php echo base64_encode(file_get_contents("IMAGE URL HERE")) ?>"> 
+
+
+
+      </div>
+    <div class="form-group">
+    {{ dump(form.imageName) }}
+        {{ form_label(form.imageName, 'Photo d\'identité (optionnel mais obligatoire pour obtenir votre carte d\'adherent)') }}
+        {% if adhesion is defined and adhesion.image is defined %}
+            <div class="text-center">
+            {# <img style="margin:15px" width="120" src='{{ asset('assets/adhesions/' ~ adhesion.image) }}' 
+            alt="test"> #}
+            <a href="{{ asset('assets/images/' ~ images.imageName) }}">View brochure (PDF)</a>
+            </div>
+        {% endif %} 
+        {{ form_widget(form.imageName, {'attr':{'class':'form-control'}}) }}
+        {{ form_errors(form.imageName) }}
+    </div> 
+{% endblock %}

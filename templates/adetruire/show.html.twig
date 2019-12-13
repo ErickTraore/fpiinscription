@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Adhesion{% endblock %}
+
+{% block body %}
+    <h1>Adhesion</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ adhesion.id }}</td>
+            </tr>
+            <tr>
+                <th>Homme</th>
+                <td>{{ adhesion.homme }}</td>
+            </tr>
+             <tr>
+                <th>Femme</th>
+                <td>{{ adhesion.femme }}</td>
+            </tr>
+            <tr>
+                <th>ShortHead</th>
+                <td>{{ adhesion.shortHead }}</td>
+            </tr>
+            <tr>
+                <th>FirstName</th>
+                <td>{{ adhesion.firstName }}</td>
+            </tr>
+            <tr>
+                <th>LastName</th>
+                <td>{{ adhesion.lastName }}</td>
+            </tr>
+            <tr>
+                <th>LieuNaissance</th>
+                <td>{{ adhesion.lieuNaissance }}</td>
+            </tr>
+            <tr>
+                <th>Nationnalite</th>
+                <td>{{ adhesion.nationnalite }}</td>
+            </tr>
+            <tr>
+                <th>NumberIdentity</th>
+                <td>{{ adhesion.numberIdentity }}</td>
+            </tr>
+            <tr>
+                <th>AdresseCi</th>
+                <td>{{ adhesion.adresseCi }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ adhesion.email }}</td>
+            </tr>
+            <tr>
+                <th>Profession</th>
+                <td>{{ adhesion.profession }}</td>
+            </tr>
+            <tr>
+                <th>Federation</th>
+                <td>{{ adhesion.federation ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Base</th>
+                <td>{{ adhesion.base ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Section</th>
+                <td>{{ adhesion.section ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Birthday</th>
+                <td>{{ adhesion.birthday ? adhesion.birthday|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+      <button class="btn">{{ button_label|default('Save') }} </div></button> 
+ {#   <div class="alert alert-danger">{{ form_rest(form) }} #}
+
+{#     <a href="{{ path('adhesion_index') }}">back to list</a> #}
+{#  {{ dump(adhesion.id)}} #}
+ {#    <a href="{{ path('adhesion_edit', {'id': adhesion.id}) }}">edit</a> #}
+ {#   <a href="{{ path("adhesion_edit" , {'id': adhesion.id}) }}">edit</a> #}
+
+    {# {{ include('adhesion/_delete_form.html.twig') }} #}
+{% endblock %}

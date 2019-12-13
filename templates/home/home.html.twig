@@ -1,0 +1,21 @@
+{% extends  'home/layout.html.twig' %}
+{% block title %}Election_Cote-d'Ivoire_2020{% endblock %}
+
+     {% block gauche %}
+               {#     <div> <img src="{{ asset('/assets/img/logofpi.png') }}" class="img-circle"  alt="logo"></div> #} 
+  {% if is_granted('ROLE_SYMPATHISANT')  %}
+         {% include('menu-accordeon.html.twig') %}
+    {% endif %}     
+       {% endblock %}    
+        
+      
+{% block body %}
+{% if is_granted('ROLE_SYMPATHISANT')  %}
+ <p align="center">
+ <iframe class= "img-fluid" alt= "Responsive image" src="https://www.youtube.com/embed/0eUFOmadBFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+ </p>
+ {% else %}
+        <div> <img src="{{ asset('assets/img/xpubfpi.jpg') }}"  class= "img-fluid" alt= "Responsive image"></div> 
+ 
+ {% endif %} 
+{% endblock %}

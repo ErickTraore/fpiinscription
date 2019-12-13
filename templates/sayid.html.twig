@@ -1,0 +1,19 @@
+{% extends  'base.html.twig' %}
+
+ {% block header %} {% endblock %}
+ {% block gauche %} 
+    {{ include('/menu-accordeon.html.twig') }}
+        {% endblock %}
+{% block body %}
+
+
+
+<h3> Mes infos personnelles </h3>
+<div container>
+<p><label> Mon identifiant:</label>
+ {{ user.username }}</p>
+  <p><label> Ma date d'inscription:</label>
+ {{ user.DateCrea|date('d/m/Y') }} </p> 
+ <p> <label> Mon statut:</label> Sympatisant</p>
+ {# {{ user.roles }}</p> </div> #}
+{% endblock %}

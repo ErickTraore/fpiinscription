@@ -1,0 +1,18 @@
+{%  extends 'base.html.twig' %}
+{% form_theme formCount 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+<h1> Paiement Abonnement 5€ par mois</h1>
+
+{{ form_start(formCount) }}
+
+{{ form_row(formCount.qte,{'attr': {'placeholder': "Nonmbre de mois que vous désirez payer" }}) }}
+
+
+
+
+<button type="submit" class="btn btn-success"> Paiments mensuels</button>
+
+{{ form_end(formCount) }}
+
+{% endblock %}

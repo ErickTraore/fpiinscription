@@ -1,0 +1,36 @@
+[26-Oct-2019 10:03:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/AdhesionController.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/AdhesionController.php on line 46
+[26-Oct-2019 10:03:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/CotisationController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 18
+[26-Oct-2019 10:03:00 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/IndexController.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/IndexController.php on line 26
+[26-Oct-2019 10:03:01 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/CountController.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CountController.php on line 21
+[29-Oct-2019 21:21:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/AdhesionController.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/AdhesionController.php on line 46
+[29-Oct-2019 21:21:43 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/CountController.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CountController.php on line 21
+[29-Oct-2019 21:21:44 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/CotisationController.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 26
+[29-Oct-2019 21:21:46 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/IndexController.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/IndexController.php on line 26
+[29-Oct-2019 21:22:09 Europe/Paris] PHP Fatal error:  Uncaught Error: Class 'Symfony\Bundle\FrameworkBundle\Controller\AbstractController' not found in /home/c1249189c/public_html/src/Controller/CotisationController.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/c1249189c/public_html/src/Controller/CotisationController.php on line 26

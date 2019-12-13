@@ -1,0 +1,17 @@
+{% extends  'base.html.twig' %}
+
+{% block title %} forgetpassafter {% endblock %}
+
+{% block body %}
+
+<h5>Vous recevrez immédiatement un code provisoire par SMS. Une fois reconnecté, nous vous invitons à reconstruire votre Mot De Pass.</h5>
+
+{# {{ testrand }}
+{{ numrand }}
+{{ numhash }} #}
+
+<a href="{{ path('login') }}"><p><h3><span class="label label-success">Continuez!</span></h3></p></a>
+
+
+
+ {% endblock %}  

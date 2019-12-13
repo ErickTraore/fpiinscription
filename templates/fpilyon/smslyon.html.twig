@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EnvoiesmsfpiController!{% endblock %}
+
+{% block body %}
+
+ {# <form action='/index.php/envoiesmsfpi/smsgeneral' method='post'> #}
+<form action='' method='post'>
+   <label>Votre message</label>
+
+<textarea id="story" name="message" 
+          rows="10" cols="53">
+It was a dark and stormy night...
+</textarea>
+<button type='submit'> envoyer sms aux membres fpi de Lyon</button>
+</form>
+{% endblock %}

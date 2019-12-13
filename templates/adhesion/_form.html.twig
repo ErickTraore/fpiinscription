@@ -1,0 +1,77 @@
+<div class="container">
+
+{{ form_start(form, {'attr' : {'novalidate':'novalidate'}}) }}
+
+<div class="form-group">
+{{ form_label(form.gender, 'Homme ou Femme') }}
+{{ form_widget(form.gender, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.gender) }}
+</div>
+<div class="form-group">
+{{ form_label(form.firstName, 'Nom') }}
+{{ form_widget(form.firstName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.firstName) }}
+</div>
+<div class="form-group">
+{{ form_label(form.lastName, 'Prenom') }}
+{{ form_widget(form.lastName, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.lastName) }}
+</div>
+<div class="form-group">
+{{ form_label(form.birthday, 'Date de naissance') }}
+{{ form_widget(form.birthday, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.birthday) }}
+</div>
+<div class="form-group">
+{{ form_label(form.nationnalite, 'Nationnalité') }}
+{{ form_widget(form.nationnalite, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.nationnalite) }}
+</div>
+<div class="form-group">
+{{ form_label(form.lieuNaissance, 'Lieu de Naissance') }}
+{{ form_widget(form.lieuNaissance, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.lieuNaissance) }}
+</div>
+<div class="form-group">
+{{ form_label(form.natureIdentite) }}
+{{ form_widget(form.natureIdentite, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.natureIdentite) }}
+</div>
+<div class="form-group">
+{{ form_label(form.numberIdentity, 'Numero de la piece d\'identite') }}
+{{ form_widget(form.numberIdentity, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.numberIdentity) }}
+</div>
+<div class="form-group">
+{{ form_label(form.ville, 'Ville') }}
+{{ form_widget(form.ville, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.ville) }}
+</div>
+<div class="form-group">
+{{ form_label(form.pays, 'Pays') }}
+{{ form_widget(form.pays, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.pays) }}
+</div>
+<div class="form-group">
+{{ form_label(form.codepostale, 'Code postale') }}
+{{ form_widget(form.codepostale, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.codepostale) }}
+</div>
+<div class="form-group">
+{{ form_label(form.email, 'Email') }}
+{{ form_widget(form.email, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.email) }}
+</div>
+<div class="form-group">
+{{ form_label(form.profession, 'Profession') }}
+{{ form_widget(form.profession, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.profession) }}
+</div>
+<div class="form-group">
+{{ form_label(form.statut, 'Selectionnez votre categorie') }}
+{{ form_widget(form.statut, {'attr':{'class':'form-control'}}) }}
+{{ form_errors(form.statut) }}
+</div>
+
+{{ form_end(form) }}
+</div>
