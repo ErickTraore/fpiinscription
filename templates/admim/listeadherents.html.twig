@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Paiements{% endblock %}
+
+{% block body %}
+    <h1>Liste des adhérents</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>gender</th>
+                <th>firstName</th>
+                <th>lastName</th>
+                <th>nationnalite</th>
+                <th>ville</th>
+                <th>codepostale</th>
+                <th>pays</th>
+            </tr>
+        </thead>
+    <tbody>
+        {% for listeadherent in listeadherents %}
+            <tr>
+                <td>{{ listeadherent.id }}</td>
+                <td>{{ listeadherent.gender }}</td>
+                <td>{{ listeadherent.firstName }}</td>
+                <td>{{ listeadherent.lastName }}</td>
+                <td>{{ listeadherent.nationnalite }}</td>
+                <td>{{ listeadherent.ville }}</td>
+                <td>{{ listeadherent.codepostale }}</td>
+                <td>{{ listeadherent.pays }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="14">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

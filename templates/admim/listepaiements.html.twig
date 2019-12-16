@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Paiements{% endblock %}
+
+{% block body %}
+    <h1>Liste de tous les paiements</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Ref</th>
+                <th>Description</th>
+                <th>PUnHt</th>
+                <th>Qte</th>
+                <th>Remise</th>
+                <th>PUnHtRem</th>
+                <th>PrixTotHt</th>
+                <th>Tva</th>
+                <th>DateBill</th>
+                <th>TotalTtc</th>
+                <th>TotCumul</th>
+                <th>DateCumul</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for listepaiement in listepaiements %}
+            <tr>
+                <td>{{ listepaiement.id }}</td>
+                <td>{{ listepaiement.ref }}</td>
+                <td>{{ listepaiement.description }}</td>
+                <td>{{ listepaiement.pUnHt }}</td>
+                <td>{{ listepaiement.qte }}</td>
+                <td>{{ listepaiement.remise }}</td>
+                <td>{{ listepaiement.pUnHtRem }}</td>
+                <td>{{ listepaiement.prixTotHt }}</td>
+                <td>{{ listepaiement.tva }}</td>
+                <td>{{ listepaiement.dateBill ? listepaiement.dateBill|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ listepaiement.totalTtc }}</td>
+                <td>{{ listepaiement.totCumul }}</td>
+                <td>{{ listepaiement.dateCumul ? listepaiement.dateCumul|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="14">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+

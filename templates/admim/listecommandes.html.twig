@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Paiements{% endblock %}
+
+{% block body %}
+    <h1>Commande en ligne des adhésions</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>gender</th>
+                <th>firstName</th>
+                <th>lastName</th>
+                <th>nationnalite</th>
+                <th>ville</th>
+                <th>codepostale</th>
+                <th>pays</th>
+            </tr>
+        </thead>
+    <tbody>
+        {% for listecommande in listecommandes %}
+            <tr>
+                <td>{{ listecommande.id }}</td>
+                <td>{{ listecommande.gender }}</td>
+                <td>{{ listecommande.firstName }}</td>
+                <td>{{ listecommande.lastName }}</td>
+                <td>{{ listecommande.nationnalite }}</td>
+                <td>{{ listecommande.ville }}</td>
+                <td>{{ listecommande.codepostale }}</td>
+                <td>{{ listecommande.pays }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="14">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
